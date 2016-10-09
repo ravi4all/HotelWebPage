@@ -1,0 +1,75 @@
+/* Common CSS */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: arial;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Layout */
+#header {
+    background: rgba(0,0,0,0.6);
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 1000;
+}
+
+#banner {
+    position: relative;
+}
+#banner img {
+    width: 100%;
+    min-height: 600px;
+}
+#banner .form {
+    position: absolute;
+    top: 0px;
+}
+
+
+#main-navigation {
+    float: left;
+    width: 65%;
+    padding-top: 30px;
+}
+#main-navigation ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+#main-navigation ul li {
+    display: inline-block;
+    margin: 0px 15px;
+}
+#main-navigation ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#content {
+    
+}
+
+#main {
+    
+}
+
+#footer {
+    
+}
+
+/** Specific **/
+.logo {
+    float: left;
+    width: 30%;
+}
