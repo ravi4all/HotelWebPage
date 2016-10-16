@@ -14,6 +14,15 @@ body {
     clear: both;
 }
 
+#container {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0px auto;
+}
+
 /* Layout */
 #header {
     background: rgba(0,0,0,0.6);
@@ -33,8 +42,44 @@ body {
 #banner .form {
     position: absolute;
     top: 0px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+#banner .wrapper {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+#banner .inner-wrapper {
+    display: table-cell;
+    vertical-align: middle;
 }
 
+.form ul {
+    margin: 0px auto;
+    padding: 25px 0px;
+    list-style: none;
+    background: #fff;
+    width: 80%;
+}
+
+.form ul li {
+    display: inline-block;
+    margin: 0px 15px;
+}
+
+.form input[type="text"], .form input[type="date"] {
+    height: 35px;
+    padding: 0px 15px;
+    width: 200px;
+    border: 1px solid #f0f0f0;
+    background: #f0f0f0;
+}
+
+.form input[type="text"]:focus, .form input[type="date"]:focus {
+    border: 3px solid red;
+}
 
 #main-navigation {
     float: left;
@@ -72,4 +117,27 @@ body {
 .logo {
     float: left;
     width: 30%;
+}
+
+
+/**** Section1 ****/
+#section1 {
+    padding: 50px 0px;
+    text-align: center;
+}
+
+#section1 .column {
+    float: left;
+    width: 30%;
+    margin: 0px 10px;
+}
+
+.button1 {
+    font-size: 16px;
+    min-width: 200px;
+    height: 35px;
+    background: #F8AB00;
+    border: 1px solid #F8AB00;
+    margin-top: 30px;
+    color: #fff;
 }
