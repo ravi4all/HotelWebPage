@@ -6,6 +6,7 @@
 body {
     margin: 0px;
     font-family: arial;
+    background: #f6f6f6;
 }
 
 .clearfix:after {
@@ -30,6 +31,21 @@ body {
     width: 100%;
     top: 0px;
     z-index: 1000;
+}
+
+.title {
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 20px;
+}
+.title:after {
+    content: "";
+    border: 1px solid #000;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    width: 50px;
+    margin-left: -25px;
 }
 
 #banner {
@@ -125,11 +141,88 @@ body {
     padding: 50px 0px;
     text-align: center;
 }
-
+#section1 h2 {
+    text-transform: uppercase;
+}
 #section1 .column {
     float: left;
     width: 30%;
-    margin: 0px 10px;
+    padding: 0px 10px;
+}
+#section1 .column img {
+    width: 100%;
+}
+#section1 .desc {
+    padding: 12px;
+    background: #fff;
+}
+#section1 .desc a {
+    text-decoration: none;
+}
+#section1 .image {
+    position: relative;
+    overflow: hidden;
+}
+#section1 .image:after {
+    content: "";
+    background: rgba(255,255,255,0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -100%;
+    left: 0px;
+    opacity: 0;
+    transition: 1s;
+}
+#section1 .image:hover:after {
+    opacity: 1;
+    bottom: 0%;
+    transition: 1s;
+}
+#section1 .image .read-more {
+    position: absolute;
+    top: 0px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    opacity: 0;
+    top: -100%;
+}
+#section1 .read-more p {
+    font-size: 20px;
+    line-height: 24px;
+    color: red;
+    transition: 1.5s;
+}
+#section1 .image:hover .read-more {
+    opacity: 1;
+    top: 0%;
+    transition: 1.5s;
+}
+
+
+.sociable ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.sociable ul li {
+    display: inline-block;
+    font-size: 20px;
+    background: red;
+    padding: 4px 0px 0px 0px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+}
+.sociable ul li.fb {
+    background: #3B5998;
+    color: #fff;
+}
+.sociable ul li.fb a {
+    color: #fff;
 }
 
 .button1 {
